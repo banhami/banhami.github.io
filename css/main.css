@@ -12,6 +12,11 @@ img.bg {
   top: 0;
   left: 0;
 }
+a {
+    text-decoration: none;
+    text-decoration-color: none;
+    text-decoration-line: none;
+}
 body {
     overflow: hidden;
     align-content: center;
