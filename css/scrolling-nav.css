@@ -141,21 +141,6 @@ hr.small {
 }
 
 
-/* Header */
-
-.header {
-    display: table;
-    position: relative;
-    width: 100%;
-    height: 100%;
-    background: url(../img/bg.jpg) no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children
 of those sections to manage the look and feel of the site. */
@@ -175,19 +160,32 @@ of those sections to manage the look and feel of the site. */
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: url(../images/menu_hand.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
-.services-section {
+.portfolio-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    color: whitesmoke;
+    background: url(../images/code.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 .contact-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #eee;
+    background: url(../images/pike_flowers.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
