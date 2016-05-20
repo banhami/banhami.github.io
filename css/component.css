@@ -6,8 +6,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Alex';
+    src: url('../fonts/Alex_Handwriting_2.otf');
+    font-style: normal;
+    font-weight: normal;
+}
+
 .photostack {
     background: #ddd;
+    background: url(../images/wood1.jpg) no-repeat center center scroll;
     position: relative;
     text-align: center;
     overflow: hidden;
@@ -43,10 +51,13 @@ img {
     height: 360px;
     position: relative;
     display: inline-block;
-    background: #fff;
+    background: #f2f2f2;
     padding: 40px;
     text-align: center;
     margin: 5px;
+    -webkit-box-shadow: 2px 2px 2px #8c8c8c;
+    -moz-box-shadow: 2px 2px 2px #8c8c8c;
+    box-shadow: 2px 2px 2px #8c8c8c;
 }
 
 .js .photostack figure {
@@ -57,7 +68,7 @@ img {
 
 .photostack figcaption h2 {
     margin: 20px 0 0 0;
-    color: #a7a0a2;
+    color: dimgray;
     font-size: 16px;
 }
 
@@ -76,12 +87,13 @@ img {
     height: 100%;
     top: 0;
     left: 0;
-    background: #fff;
-    font-family: "Give You Glory", cursive;
-    color: #a7a0a2;
+    background: #f2f2f2;
+    font-family: "Alex", "Give You Glory", cursive;
+    /* color: #a7a0a2; */
+    color: dimgrey;
     padding: 50px 40px;
     text-align: left;
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.25;
     z-index: 1;
 }
@@ -200,7 +212,7 @@ img {
 /* Button on photostack container */
 
 .js .photostack::after {
-    content: 'View Gallery';
+    content: 'View Gallery (If site hangs, just refresh! <3)';
     font-weight: 400;
     position: absolute;
     border: 3px solid #fff;
