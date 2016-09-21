@@ -254,15 +254,22 @@ a:focus {
     padding-bottom: 100px;
     width: 100%;
     color: #F5F5F5;
+    background: #7474BF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #7474BF, #348AC7);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #7474BF, #348AC7);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*
     background: #5494BF;
-    /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(270deg, #65B2E5, #5494BF);
-    /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(270deg, #65B2E5, #5494BF);
-    /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(270deg, #65B2E5, #5494BF);
-    /* For Firefox 3.6 to 15 */
-    background: linear-gradient(180deg, #65B2E5, #5494BF);
+    /* For browsers that do not support gradients *
+    background: -webkit-linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
+    /* For Safari 5.1 to 6.0 *
+    background: -o-linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
+    /* For Opera 11.1 to 12.0 *
+    background: -moz-linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
+    /* For Firefox 3.6 to 15 *
+    background: linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
     /* Standard syntax */
 }
 
@@ -282,14 +289,21 @@ caption {
     width: 100%;
     padding: 100px 0;
     color: dimgray;
+    background: #8e9eab;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #8e9eab, #eef2f3);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, #8e9eab, #eef2f3);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*
     background: #c9d6df;
-    /* For browsers that do not support gradients */
+    /* For browsers that do not support gradients *
     background: -webkit-linear-gradient(270deg, #f0f5f9, #c9d6df);
-    /* For Safari 5.1 to 6.0 */
+    /* For Safari 5.1 to 6.0 *
     background: -o-linear-gradient(270deg, #f0f5f9, #c9d6df);
-    /* For Opera 11.1 to 12.0 */
+    /* For Opera 11.1 to 12.0 *
     background: -moz-linear-gradient(270deg, #f0f5f9, #c9d6df);
-    /* For Firefox 3.6 to 15 */
+    /* For Firefox 3.6 to 15 *
     background: linear-gradient(180deg, #f0f5f9, #c9d6df);
     /* Standard syntax */
     /*-webkit-background-size: cover;
@@ -310,18 +324,25 @@ caption {
 }
 
 .contact-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 280px;
+    padding-bottom: 320px;
     width: 100%;
     color: #F5F5F5;
+    background: #16222A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(0deg, #16222A, #3A6073);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(0deg, #16222A, #3A6073);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*
     background: #32BFA6;
-    /* For browsers that do not support gradients */
+    /* For browsers that do not support gradients *
     background: -webkit-linear-gradient(270deg, #32BFA6, #217F6F);
-    /* For Safari 5.1 to 6.0 */
+    /* For Safari 5.1 to 6.0 *
     background: -o-linear-gradient(270deg, #32BFA6, #217F6F);
-    /* For Opera 11.1 to 12.0 */
+    /* For Opera 11.1 to 12.0 *
     background: -moz-linear-gradient(270deg, #32BFA6, #217F6F);
-    /* For Firefox 3.6 to 15 */
+    /* For Firefox 3.6 to 15 *
     background: linear-gradient(180deg, #32BFA6, #217F6F);
     /* Standard syntax */
 }
