@@ -1,445 +1,249 @@
-/*!
- * Start Bootstrap - Grayscale v1.1.1 (http://startbootstrap.com/template-overviews/grayscale)
- * Copyright 2013-2016 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
- */
+/* CSS for fixed-fluid layout (unecessary?) */
 
+.fixed {
+    width: 50%;
+    /* the fixed width required */
+    float: left;
+}
+
+.fixed + div {
+    margin-left: 50%;
+    /* must match the fixed width in the .fixed class */
+    overflow: hidden;
+}
+
+
+/* CSS to ensure sidebar and content are same height (optional) */
+
+html,
 body {
-    width: 100%;
-    height: 100%;
-    font-family: "Open Sans", "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: dimgray;
-    background-color: #F5F5F5;
-}
-
-html {
-    width: 100%;
     height: 100%;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0 0 35px;
-    text-transform: uppercase;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
-
-p {
-    margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
-}
-
-@media (min-width: 768px) {
-    p {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
-}
-
-a {
-    color: #42DCA3;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-a:hover,
-a:focus {
-    text-decoration: none;
-    color: #1d9b6c;
-}
-
-.light {
-    font-weight: 400;
-}
-
-.navbar-custom {
-    margin-bottom: 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    text-transform: uppercase;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background-color: #F5F5F5;
-}
-
-.navbar-custom .navbar-toggle {
-    color: dimgrey;
-    background-color: rgba(255, 255, 255, 0.2);
-    font-size: 12px;
-}
-
-.navbar-custom .navbar-toggle:focus,
-.navbar-custom .navbar-toggle:active {
-    outline: none;
-}
-
-.navbar-custom .navbar-brand {
-    font-weight: 700;
-}
-
-.navbar-custom .navbar-brand:focus {
-    outline: none;
-}
-
-.navbar-custom a {
-    color: dimgrey;
-}
-
-.navbar-custom .nav li a {
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
-}
-
-.navbar-custom .nav li a:hover {
-    color: darkgrey;
-    outline: none;
-    background-color: transparent;
-}
-
-.navbar-custom .nav li a:focus,
-.navbar-custom .nav li a:active {
-    outline: none;
-    background-color: transparent;
-}
-
-.navbar-custom .nav li.active {
-    outline: none;
-}
-
-.navbar-custom .nav li.active a {
-    background-color: rgba(255, 255, 255, 0.0);
-}
-
-.navbar-custom .nav li.active a:hover {
-    color: dimgrey;
-}
-
-@media (min-width: 768px) {
-    .navbar-custom {
-        padding: 20px 0;
-        border-bottom: none;
-        letter-spacing: 1px;
-        background: transparent;
-        -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-        -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-        transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
-    }
-    .navbar-custom.top-nav-collapse {
-        padding: 0;
-        background: #F5F5F5;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-    }
-}
-
-.intro {
-    display: table;
+#canvas-basic {
+    position: absolute;
+    display: block;
     width: 100%;
-    height: auto;
-    padding: 100px 0;
-    text-align: center;
-    color: dimgrey;
-    background: #F5F5F5;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
+.fadein {
+    -webkit-animation: fadein 2s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 2s;
+    /* Internet Explorer */
+    -o-animation: fadein 2s;
+    /* Opera < 12.1 */
+    animation: fadein 2s;
 }
 
-.intro .intro-body .brand-heading {
-    font-size: 40px;
-}
-
-.intro .intro-body .intro-text {
-    font-size: 18px;
-}
-
-@media (min-width: 768px) {
-    .intro {
-        height: 100%;
-        padding: 0;
+@keyframes fadein {
+    from {
+        opacity: 0;
     }
-    .intro .intro-body .brand-heading {
-        font-size: 100px;
-    }
-    .intro .intro-body .intro-text {
-        font-size: 26px;
+    to {
+        opacity: 1;
     }
 }
 
-.btn-circle {
-    width: 70px;
-    height: 70px;
-    margin-top: 15px;
-    padding: 7px 16px;
-    border: 2px solid dimgrey;
-    border-radius: 100% !important;
-    font-size: 40px;
-    color: dimgrey;
-    background: transparent;
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background 0.3s ease-in-out;
-}
 
-.btn-circle:hover,
-.btn-circle:focus {
-    outline: none;
-    color: dimgrey;
-    background: rgba(255, 255, 255, 0.1);
-}
+/* Firefox < 16 */
 
-.btn-circle i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-}
-
-.btn-circle:hover i.animated {
-    -webkit-animation-name: pulse;
-    -moz-animation-name: pulse;
-    -webkit-animation-duration: 1.5s;
-    -moz-animation-duration: 1.5s;
-    -webkit-animation-iteration-count: infinite;
-    -moz-animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    -moz-animation-timing-function: linear;
-}
-
-@-webkit-keyframes pulse {
-    0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
     }
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
+    to {
+        opacity: 1;
     }
 }
 
-@-moz-keyframes pulse {
-    0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
+
+/* Safari, Chrome and Opera > 12.1 */
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
     }
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
+    to {
+        opacity: 1;
     }
 }
 
-.about-section {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 100%;
-    color: #F5F5F5;
-    background: #7474BF;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(180deg, #7474BF, #348AC7);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #7474BF, #348AC7);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*
-    background: #5494BF;
-    /* For browsers that do not support gradients *
-    background: -webkit-linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
-    /* For Safari 5.1 to 6.0 *
-    background: -o-linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
-    /* For Opera 11.1 to 12.0 *
-    background: -moz-linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
-    /* For Firefox 3.6 to 15 *
-    background: linear-gradient(45deg, #65B2E5 15%, #5494BF 85%);
-    /* Standard syntax */
+
+/* Internet Explorer */
+
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
-.factoids {}
 
-caption {
-    text-align: center;
+/* Opera < 12.1 */
+
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .profile-pic {
-    max-width: 20%;
+    max-width: 30%;
     height: auto;
     margin-bottom: 30px;
 }
 
-.portfolio-section {
-    width: 100%;
-    padding: 100px 0;
-    color: dimgray;
-    background: #8e9eab;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(90deg, #8e9eab, #eef2f3);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(0deg, #8e9eab, #eef2f3);
+.fill {
+    min-height: 100%;
+    position: relative;
+}
+
+.filler:after {
+    background-color: inherit;
+    bottom: 0;
+    content: "";
+    height: auto;
+    min-height: 100%;
+    left: 0;
+    margin: inherit;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: inherit;
+    z-index: -1;
+}
+
+.profile {
+    background: #20222B;
+    /* fallback for old browsers 
+    background: -webkit-linear-gradient(45deg, #FF512F, #f78536);
+    /* Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(45deg, #FF512F, #f78536);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*
-    background: #c9d6df;
-    /* For browsers that do not support gradients *
-    background: -webkit-linear-gradient(270deg, #f0f5f9, #c9d6df);
-    /* For Safari 5.1 to 6.0 *
-    background: -o-linear-gradient(270deg, #f0f5f9, #c9d6df);
-    /* For Opera 11.1 to 12.0 *
-    background: -moz-linear-gradient(270deg, #f0f5f9, #c9d6df);
-    /* For Firefox 3.6 to 15 *
-    background: linear-gradient(180deg, #f0f5f9, #c9d6df);
-    /* Standard syntax */
-    /*-webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-    */
+    padding: 3.125rem;
+    width: 100%;
+    height: 100vh;
+    color: #ececeb;
+    font-family: 'Eczar', serif;
+    padding-top: 20%;
+}
+
+.greeting {
+    text-align: left;
+}
+
+.blurb {
+    text-align: left;
+    font-size: 30px;
+    padding-top: 80px;
+}
+
+.blurb h1 {
+    font-size: 50px;
+}
+
+.links {
+    text-align: left;
+    padding-top: 80px;
+}
+
+.intro {
+    background-color: #ececeb;
+    padding: 3.125rem;
+    width: 100%;
+    height: 100%;
+    color: #2e383f;
+}
+
+.title1 {
+    text-align: right;
+    font-family: 'Work Sans', sans-serif;
+    color: #07617d;
+}
+
+.title2 {
+    text-align: right;
+    font-family: 'Work Sans', sans-serif;
+    color: #ececeb;
+}
+
+.title3 {
+    text-align: right;
+    font-family: 'Work Sans', sans-serif;
+    color: #ececeb;
+}
+
+.text1 {
+    margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 140%;
+    font-size: 15px;
+    color: #2e383f;
+}
+
+.text2 {
+    margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: #ececeb;
+    line-height: 140%;
+    font-size: 15px;
+}
+
+.text3 {
+    margin-top: 10px;
+    font-family: 'Work Sans', sans-serif;
+    color: #ececeb;
+    line-height: 140%;
+    font-size: 15px;
+}
+
+.resume {
+    background-color: #07617d;
+    padding: 3.125rem;
+    width: 100%;
+    height: 100%;
 }
 
 .projects {
-    margin: 0 0 35px;
-}
-
-.progress {
-    background-color: dimgrey;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.contact-section {
-    padding-top: 280px;
-    padding-bottom: 320px;
+    background-color: #2b4450;
+    color: #ececeb;
+    padding: 3.125rem;
     width: 100%;
-    color: #F5F5F5;
-    background: #16222A;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(90deg, #16222A, #3A6073);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(0deg, #16222A, #3A6073);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    /*
-    background: #32BFA6;
-    /* For browsers that do not support gradients *
-    background: -webkit-linear-gradient(270deg, #32BFA6, #217F6F);
-    /* For Safari 5.1 to 6.0 *
-    background: -o-linear-gradient(270deg, #32BFA6, #217F6F);
-    /* For Opera 11.1 to 12.0 *
-    background: -moz-linear-gradient(270deg, #32BFA6, #217F6F);
-    /* For Firefox 3.6 to 15 *
-    background: linear-gradient(180deg, #32BFA6, #217F6F);
-    /* Standard syntax */
+    height: 100%;
 }
 
-#map {
-    width: 100%;
-    height: 200px;
+.left {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    left: 0;
+    width: 50%;
 }
 
-@media (min-width: 767px) {
-    .content-section {
-        padding-top: 250px;
+.right {
+    height: auto;
+    position: absolute;
+    right: 0;
+    width: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .block--right {
+        width: 100%;
+        height: auto;
+        position: static
     }
-    .download-section {
-        padding: 100px 0;
-    }
-    #map {
-        height: 400px;
-        margin-top: 250px;
-    }
-}
-
-.btn {
-    text-transform: uppercase;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 400;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    border-radius: 0;
-}
-
-.btn-default {
-    border: 1px solid #42DCA3;
-    color: #42DCA3;
-    background-color: transparent;
-}
-
-.btn-default:hover,
-.btn-default:focus {
-    border: 1px solid #42DCA3;
-    outline: none;
-    color: black;
-    background-color: #42DCA3;
-}
-
-ul.banner-social-buttons {
-    margin-top: 0;
-}
-
-@media (max-width: 1199px) {
-    ul.banner-social-buttons {
-        margin-top: 15px;
-    }
-}
-
-@media (max-width: 767px) {
-    ul.banner-social-buttons li {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    ul.banner-social-buttons li:last-child {
-        margin-bottom: 0;
-    }
-}
-
-footer {
-    padding: 20px 0;
-    background: #16222A;
-    color: #F5F5F5;
-}
-
-footer p {
-    margin: 0;
-}
-
-::-moz-selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-::selection {
-    text-shadow: none;
-    background: #fcfcfc;
-    background: rgba(255, 255, 255, 0.2);
-}
-
-img::selection {
-    background: transparent;
-}
-
-img::-moz-selection {
-    background: transparent;
-}
-
-body {
-    webkit-tap-highlight-color: rgba(255, 255, 255, 0.2);
 }
