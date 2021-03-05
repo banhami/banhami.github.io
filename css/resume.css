@@ -163,14 +163,21 @@ section.resume-section .resume-item .resume-date {
   background-color: #476a6f !important;
 }
 
+.darkmode--activated nav {
+  background-color: #212121 !important;
+}
+
 .text-primary {
   color: #d45113 !important;
+  isolation: isolate;
 }
 
 a {
   color: #d45113;
+  isolation: isolate;
 }
 
 a:hover, a:focus, a:active {
   color: #824027;
+  isolation: isolate;
 }
